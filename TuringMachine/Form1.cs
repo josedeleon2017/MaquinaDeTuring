@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -108,6 +109,42 @@ namespace TuringMachine
         private void lbl_LeftPart_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Archivo de texto con MT | *.txt";
+            dialog.Multiselect = false;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                String path = dialog.FileName; // get name of file
+                var ArchivoMT = File.ReadAllLines(path);
+                try
+                {
+                    tm.States = Convert.ToInt32(ArchivoMT[0]);
+                    tm.InitialState = Convert.ToChar(ArchivoMT[1]); //¿Qué pasa si el estado inicial es el 11? ¿No debería ser string en vez de char?
+                    tm.Alphabet = new List<string>();
+                    foreach (char c in ArchivoMT[2])
+                    {
+                        tm.Alphabet.Add(Convert.ToString(c));
+                    }
+                    if (ArchivoMT.Length < 4) //Comprueba que el archivo de MT tenga al menos una transición
+                    {
+                        throw new Exception();
+                    }
+                    tm.Transitions = new List<string>();
+                    for (int i = 3; i < ArchivoMT.Length; i++)
+                    {
+                        tm.Transitions.Add(ArchivoMT[i]);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Ha ocurrido un error, compruebe el formato del archivo.");
+                }
+                
+            }
         }
     }
 }
