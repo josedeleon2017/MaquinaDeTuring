@@ -18,6 +18,7 @@ namespace TuringMachine
         int PointerPosition = 0;
         List<char> Input = new List<char>();
         bool Stop = false;
+        int CountTransitions = 0;
         public Form1()
         {
             InitializeComponent();
@@ -49,10 +50,12 @@ namespace TuringMachine
             if (move == 'd')
             {
                 PointerPosition++;
+                CountTransitions++;
             }
             if (move == 'i')
             {
                 PointerPosition--;
+                CountTransitions++;
             }
             if (move == 'p')
             {
@@ -63,6 +66,19 @@ namespace TuringMachine
                 btnRestart.Enabled = true;
                 Stop = true;
                 return;
+            }
+            if(move == '0')
+            {
+                CountTransitions++;
+            }
+            if (CountTransitions % 25 == 0)
+            {
+                DialogResult dialogResult = MessageBox.Show("Desea para la ejecución?", "text", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Stop = true;
+                }
+
             }
             RefreshData();
         }
@@ -86,6 +102,7 @@ namespace TuringMachine
 
         public void RefreshData()
         {
+            lblCounter.Text = Convert.ToString(CountTransitions);
             if (PointerPosition == 0)
             {
                 lblActualPosition.Text = Convert.ToString(Input[PointerPosition]);
@@ -191,7 +208,7 @@ namespace TuringMachine
         {
             btnDoStep.Enabled = false;
             while (Stop!=true)
-            {               
+            {   
                 Step();
                 Refresh();
                 Thread.Sleep(500);

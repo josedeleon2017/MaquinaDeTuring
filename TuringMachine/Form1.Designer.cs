@@ -44,6 +44,8 @@
             this.lbl_LeftPart = new System.Windows.Forms.Label();
             this.lblRightPart = new System.Windows.Forms.Label();
             this.btnRestart = new System.Windows.Forms.Button();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -221,12 +223,34 @@
             this.btnRestart.UseVisualStyleBackColor = true;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(721, 244);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(193, 27);
+            this.lbl.TabIndex = 18;
+            this.lbl.Text = "NO. TRANSICIÓN";
+            // 
+            // lblCounter
+            // 
+            this.lblCounter.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounter.Location = new System.Drawing.Point(966, 244);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(132, 33);
+            this.lblCounter.TabIndex = 19;
+            this.lblCounter.Text = "-";
+            this.lblCounter.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1200, 502);
+            this.Controls.Add(this.lblCounter);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblRightPart);
             this.Controls.Add(this.lbl_LeftPart);
@@ -270,6 +294,8 @@
         private System.Windows.Forms.Label lbl_LeftPart;
         private System.Windows.Forms.Label lblRightPart;
         private System.Windows.Forms.Button btnRestart;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblCounter;
     }
 }
 
