@@ -46,6 +46,7 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.lbl = new System.Windows.Forms.Label();
             this.lblCounter = new System.Windows.Forms.Label();
+            this.lblMachineName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 70);
+            this.label2.Location = new System.Drawing.Point(16, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(184, 17);
             this.label2.TabIndex = 2;
@@ -70,7 +71,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(19, 89);
+            this.button1.Location = new System.Drawing.Point(19, 81);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 31);
@@ -136,7 +137,7 @@
             // 
             this.btnDoStep.Enabled = false;
             this.btnDoStep.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoStep.Location = new System.Drawing.Point(19, 196);
+            this.btnDoStep.Location = new System.Drawing.Point(19, 244);
             this.btnDoStep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoStep.Name = "btnDoStep";
             this.btnDoStep.Size = new System.Drawing.Size(133, 41);
@@ -149,7 +150,7 @@
             // 
             this.btnDoExecution.Enabled = false;
             this.btnDoExecution.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoExecution.Location = new System.Drawing.Point(158, 196);
+            this.btnDoExecution.Location = new System.Drawing.Point(158, 244);
             this.btnDoExecution.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDoExecution.Name = "btnDoExecution";
             this.btnDoExecution.Size = new System.Drawing.Size(133, 41);
@@ -161,7 +162,7 @@
             // txtInput
             // 
             this.txtInput.Enabled = false;
-            this.txtInput.Location = new System.Drawing.Point(19, 145);
+            this.txtInput.Location = new System.Drawing.Point(19, 205);
             this.txtInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(221, 22);
@@ -170,7 +171,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 126);
+            this.label6.Location = new System.Drawing.Point(16, 177);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 13;
@@ -179,10 +180,10 @@
             // btnLoadInput
             // 
             this.btnLoadInput.Enabled = false;
-            this.btnLoadInput.Location = new System.Drawing.Point(259, 142);
+            this.btnLoadInput.Location = new System.Drawing.Point(246, 201);
             this.btnLoadInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLoadInput.Name = "btnLoadInput";
-            this.btnLoadInput.Size = new System.Drawing.Size(139, 31);
+            this.btnLoadInput.Size = new System.Drawing.Size(184, 31);
             this.btnLoadInput.TabIndex = 14;
             this.btnLoadInput.Text = "Importar cinta";
             this.btnLoadInput.UseVisualStyleBackColor = true;
@@ -214,7 +215,7 @@
             // 
             this.btnRestart.Enabled = false;
             this.btnRestart.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestart.Location = new System.Drawing.Point(297, 196);
+            this.btnRestart.Location = new System.Drawing.Point(297, 244);
             this.btnRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(133, 41);
@@ -243,12 +244,23 @@
             this.lblCounter.Text = "-";
             this.lblCounter.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // lblMachineName
+            // 
+            this.lblMachineName.AutoSize = true;
+            this.lblMachineName.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMachineName.Location = new System.Drawing.Point(14, 141);
+            this.lblMachineName.Name = "lblMachineName";
+            this.lblMachineName.Size = new System.Drawing.Size(46, 27);
+            this.lblMachineName.TabIndex = 20;
+            this.lblMachineName.Text = "MT";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1200, 502);
+            this.Controls.Add(this.lblMachineName);
             this.Controls.Add(this.lblCounter);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnRestart);
@@ -296,6 +308,7 @@
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblCounter;
+        private System.Windows.Forms.Label lblMachineName;
     }
 }
 

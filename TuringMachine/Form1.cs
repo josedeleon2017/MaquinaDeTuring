@@ -46,6 +46,8 @@ namespace TuringMachine
             char char_to_write = ActionResult[0];
             Input[PointerPosition] = char_to_write;
 
+            //
+            if (Input[Input.Count-1] != '_') Input.Add('_');
             char move = ActionResult[1];
             if (move == 'd')
             {
@@ -71,7 +73,7 @@ namespace TuringMachine
             {
                 CountTransitions++;
             }
-            if (CountTransitions % 25 == 0)
+            if (CountTransitions % 100 == 0)
             {
                 DialogResult dialogResult = MessageBox.Show("Desea para la ejecución?", "text", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
@@ -156,6 +158,7 @@ namespace TuringMachine
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 String path = dialog.FileName; // get name of file
+                lblMachineName.Text = dialog.FileName.Split('\\')[dialog.FileName.Split('\\').Length-1];
                 var ArchivoMT = File.ReadAllLines(path);
                 try
                 {
@@ -198,8 +201,12 @@ namespace TuringMachine
             lblRightPart.Text = "_";
             lblCurrentTransition.Text = "_";
             lblState.Text = "_";
+            
+            //
+            lblCounter.Text = "_";
             Input = new List<char>();
             PointerPosition = 0;
+            CountTransitions = 0;
             tm.CurrentState = tm.InitialState;
             tm.CurrentTransition = null;
         }
