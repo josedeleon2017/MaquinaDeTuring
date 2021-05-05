@@ -18,3 +18,13 @@ C:\Users\Usuario\OneDrive\Escritorio\MaquinaDeTuring\TuringMachine\obj\Debug\Tur
 C:\Users\Usuario\OneDrive\Escritorio\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\OneDrive\Escritorio\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.exe
 C:\Users\Usuario\OneDrive\Escritorio\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.pdb
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.exe.config
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.exe
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.pdb
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csprojAssemblyReference.cache
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.Form1.resources
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.Properties.Resources.resources
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.GenerateResource.cache
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.CoreCompileInputs.cache
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.exe
+C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.pdb

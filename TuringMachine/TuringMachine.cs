@@ -10,11 +10,11 @@ namespace TuringMachine
     {
 
         public int States { get; set; }
-        public char InitialState { get; set; }
+        public int InitialState { get; set; }
         public List<string> Alphabet { get; set; }
         public List<string> Transitions { get; set; }
 
-        public char CurrentState { get; set; }
+        public int CurrentState { get; set; }
         public string CurrentTransition { get; set; }
 
 
@@ -25,10 +25,10 @@ namespace TuringMachine
             {
                 string[] transition = Transitions[i].Split(',');
                 char consumed_match = Convert.ToChar(transition[1]);
-                char state_match = Convert.ToChar(transition[0]);
-                if (consumed_char == consumed_match && state_match == Convert.ToChar(CurrentState))
+                int state_match = Convert.ToInt32(transition[0]);
+                if (consumed_char == consumed_match && state_match == CurrentState)
                 {
-                    CurrentState = Convert.ToChar(transition[2]);
+                    CurrentState = Convert.ToInt32(transition[2]);
                     CurrentTransition = Transitions[i];
                     return transition[3] + transition[4];
                 }
