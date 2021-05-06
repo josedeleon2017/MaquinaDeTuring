@@ -67,6 +67,7 @@ namespace TuringMachine
             
             //Realiza la acción del movimiento sobre la cinta
             char move = ActionResult[1];
+            move = (move.ToString().ToLower().ToCharArray()[0]);
             if (move == 'd')
             {
                 PointerPosition++;
@@ -95,7 +96,7 @@ namespace TuringMachine
                 CountTransitionsWith0++;
             }
             //Cada 150 transiciones realizadas consulta si se desea continuar con la ejecución automática
-            if (CountTransitions % 150 == 0)
+            if (CountTransitions % 100 == 0)
             {
                 DialogResult dialogResult = MessageBox.Show("¿Desea detener la ejecución automática?", "Estado de ejecución", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
@@ -281,7 +282,7 @@ namespace TuringMachine
             Input = new List<char>();
             PointerPosition = 0;
             CountTransitions = 0;
-            CountTransitionsWith0 = 0;
+            CountTransitionsWith0 = 1;
             tm.CurrentState = tm.InitialState;
             tm.CurrentTransition = null;
         }
@@ -297,6 +298,8 @@ namespace TuringMachine
                 Thread.Sleep(500);
             }
             Stop = false;
+            btnRestart.Enabled = true;
+            btnDoExecution.Enabled = false;
             return;
         }
     }

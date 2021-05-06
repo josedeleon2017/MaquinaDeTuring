@@ -85,7 +85,7 @@
             this.lblActualPosition.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblActualPosition.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActualPosition.ForeColor = System.Drawing.Color.Red;
-            this.lblActualPosition.Location = new System.Drawing.Point(605, 378);
+            this.lblActualPosition.Location = new System.Drawing.Point(721, 378);
             this.lblActualPosition.Margin = new System.Windows.Forms.Padding(0);
             this.lblActualPosition.Name = "lblActualPosition";
             this.lblActualPosition.Size = new System.Drawing.Size(21, 27);
@@ -97,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(721, 167);
+            this.label3.Location = new System.Drawing.Point(870, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(191, 27);
             this.label3.TabIndex = 6;
@@ -106,7 +106,7 @@
             // lblState
             // 
             this.lblState.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblState.Location = new System.Drawing.Point(987, 167);
+            this.lblState.Location = new System.Drawing.Point(1136, 169);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(111, 33);
             this.lblState.TabIndex = 7;
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(721, 203);
+            this.label4.Location = new System.Drawing.Point(870, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(239, 27);
             this.label4.TabIndex = 8;
@@ -126,7 +126,7 @@
             // lblCurrentTransition
             // 
             this.lblCurrentTransition.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTransition.Location = new System.Drawing.Point(966, 200);
+            this.lblCurrentTransition.Location = new System.Drawing.Point(1115, 202);
             this.lblCurrentTransition.Name = "lblCurrentTransition";
             this.lblCurrentTransition.Size = new System.Drawing.Size(132, 33);
             this.lblCurrentTransition.TabIndex = 9;
@@ -195,7 +195,7 @@
             this.lbl_LeftPart.Location = new System.Drawing.Point(25, 378);
             this.lbl_LeftPart.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_LeftPart.Name = "lbl_LeftPart";
-            this.lbl_LeftPart.Size = new System.Drawing.Size(580, 27);
+            this.lbl_LeftPart.Size = new System.Drawing.Size(691, 27);
             this.lbl_LeftPart.TabIndex = 15;
             this.lbl_LeftPart.Text = "_";
             this.lbl_LeftPart.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -204,10 +204,10 @@
             // lblRightPart
             // 
             this.lblRightPart.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRightPart.Location = new System.Drawing.Point(627, 378);
+            this.lblRightPart.Location = new System.Drawing.Point(742, 378);
             this.lblRightPart.Margin = new System.Windows.Forms.Padding(0);
             this.lblRightPart.Name = "lblRightPart";
-            this.lblRightPart.Size = new System.Drawing.Size(555, 27);
+            this.lblRightPart.Size = new System.Drawing.Size(613, 27);
             this.lblRightPart.TabIndex = 16;
             this.lblRightPart.Text = "_";
             // 
@@ -228,7 +228,7 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(721, 244);
+            this.lbl.Location = new System.Drawing.Point(870, 246);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(193, 27);
             this.lbl.TabIndex = 18;
@@ -237,7 +237,7 @@
             // lblCounter
             // 
             this.lblCounter.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCounter.Location = new System.Drawing.Point(966, 244);
+            this.lblCounter.Location = new System.Drawing.Point(1115, 246);
             this.lblCounter.Name = "lblCounter";
             this.lblCounter.Size = new System.Drawing.Size(132, 33);
             this.lblCounter.TabIndex = 19;
@@ -259,7 +259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1200, 502);
+            this.ClientSize = new System.Drawing.Size(1355, 502);
             this.Controls.Add(this.lblMachineName);
             this.Controls.Add(this.lblCounter);
             this.Controls.Add(this.lbl);
