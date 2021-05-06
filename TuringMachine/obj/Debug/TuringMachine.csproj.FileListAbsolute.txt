@@ -28,3 +28,13 @@ C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\
 C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.CoreCompileInputs.cache
 C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.exe
 C:\Users\José De León\Desktop\LFYA M1\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.pdb
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.exe.config
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.exe
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\bin\Debug\TuringMachine.pdb
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csprojAssemblyReference.cache
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.Form1.resources
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.Properties.Resources.resources
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.GenerateResource.cache
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.csproj.CoreCompileInputs.cache
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.exe
+C:\Users\kevin\OneDrive\Documentos\GitHub\MaquinaDeTuring\TuringMachine\obj\Debug\TuringMachine.pdb

@@ -19,6 +19,7 @@ namespace TuringMachine
         List<char> Input = new List<char>();
         bool Stop = false;
         int CountTransitions = 0;
+        int LimitTransitions = 0;
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +48,7 @@ namespace TuringMachine
             Input[PointerPosition] = char_to_write;
 
             char move = ActionResult[1];
+            move = (move.ToString().ToLower().ToCharArray()[0]);
             if (move == 'd')
             {
                 PointerPosition++;
@@ -71,7 +73,7 @@ namespace TuringMachine
             {
                 CountTransitions++;
             }
-            if (CountTransitions % 25 == 0)
+            if (CountTransitions % LimitTransitions == 0)
             {
                 DialogResult dialogResult = MessageBox.Show("Desea para la ejecución?", "text", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
@@ -93,6 +95,7 @@ namespace TuringMachine
                 Input.Add(txtInput.Text[i]);
             }
             Input.Add('_');
+            LimitTransitions = Input.Count * tm.Transitions.Count;
             btnDoStep.Enabled = true;
             btnDoExecution.Enabled = true;
             RefreshData();
@@ -187,6 +190,7 @@ namespace TuringMachine
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
+            CountTransitions = 0;
             txtInput.Text = "";
             txtInput.Enabled = true;
             btnLoadInput.Enabled = true;
@@ -198,6 +202,7 @@ namespace TuringMachine
             lblRightPart.Text = "_";
             lblCurrentTransition.Text = "_";
             lblState.Text = "_";
+            lblCounter.Text = "_";
             Input = new List<char>();
             PointerPosition = 0;
             tm.CurrentState = tm.InitialState;
